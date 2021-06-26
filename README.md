@@ -20,3 +20,29 @@ Linear Regression to Predict MPG
 * The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
 
 * Lot 1 and Lot 2 are both within design specifications and have hnearly the same exact mean and median. Lot 3 shows the most variance and exceeds the manufacturers specs.
+
+# T-Tests on Suspension Coils
+
+* T-Test all manufacturing lots against the population mean
+
+![alt text](https://github.com/ali8261/MechaCar_Statistical_Analysis/blob/main/Images/T_test.png)
+
+Assuming our significance level is the common 0.05 percent, our p-value of 0.060 is above the significance level. Therefore, we do not have sufficient evidence to reject the null hypothesis, and we can state that the PSI across all manufacturing lots is statiscally similar to the population mean of 1498.78 psi.
+
+# T-Tests each manufacturing lot against the population mean
+
+* Lot1
+
+![alt text](https://github.com/ali8261/MechaCar_Statistical_Analysis/blob/main/Images/Lot1.png)
+
+Here the p-value is below the significance level of 0.05 percent, so we can reject the null hypothesis and conclude that the PSI across the Lot 1 is statistically different from the population mean.
+
+* Lot2
+
+![alt text](https://github.com/ali8261/MechaCar_Statistical_Analysis/blob/main/Images/Lot2.png)
+
+* Lot3
+
+!alt text](https://github.com/ali8261/MechaCar_Statistical_Analysis/blob/main/Images/Lot3.png)
+
+Here both p-values are above the significance level, so we can conclude that the PSI for Lot2 and Lot3 are statistically similar to the population mean.
