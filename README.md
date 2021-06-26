@@ -27,7 +27,7 @@ Linear Regression to Predict MPG
 
 ![alt text](https://github.com/ali8261/MechaCar_Statistical_Analysis/blob/main/Images/T_test.png)
 
-Assuming our significance level is the common 0.05 percent, our p-value of 0.060 is above the significance level. Therefore, we do not have sufficient evidence to reject the null hypothesis, and we can state that the PSI across all manufacturing lots is statiscally similar to the population mean of 1498.78 psi.
+A review of the results of the T-test for the suspension coils across all manufacturing lots shows that they are not statistically different from the population mean, and the p-value is not low enough (0.0603) for us to reject the null hypothesis. 
 
 # T-Tests each manufacturing lot against the population mean
 
@@ -35,14 +35,35 @@ Assuming our significance level is the common 0.05 percent, our p-value of 0.060
 
 ![alt text](https://github.com/ali8261/MechaCar_Statistical_Analysis/blob/main/Images/Lot1.png)
 
-Here the p-value is below the significance level of 0.05 percent, so we can reject the null hypothesis and conclude that the PSI across the Lot 1 is statistically different from the population mean.
+* A review of the results of the T-test for the suspension coils for Lot 1 shows that they are not statistically different from the population mean, and the p-value is not low enough (1) for us to reject the null hypothesis. 
+
 
 * Lot2
 
 ![alt text](https://github.com/ali8261/MechaCar_Statistical_Analysis/blob/main/Images/Lot2.png)
 
+* A review of the results of the T-test for the suspension coils for Lot 2 shows that they are not statistically different from the population mean, and the p-value is not low enough (0.6072) for us to reject the null hypothesis. 
+
 * Lot3
 
-!alt text](https://github.com/ali8261/MechaCar_Statistical_Analysis/blob/main/Images/Lot3.png)
+![alt text](https://github.com/ali8261/MechaCar_Statistical_Analysis/blob/main/Images/Lot3.png)
 
-Here both p-values are above the significance level, so we can conclude that the PSI for Lot2 and Lot3 are statistically similar to the population mean.
+* A review of the results of the T-test for the suspension coils for Lot 3 shows that they are slightly statistically different from the population mean, and the p-value is just low enough (0.0417) for us to reject the null hypothesis. This lot may be need to be discarded, or at least more closely evaluated.
+
+# Study Design: MechaCar vs Competition
+
+There are many factors that consumers take into consideration when evaluating a car to purchase. However, in a world where ridesharing is becoming more ubiquitous and it's easy and cheap to get around in other people's vehicles, customers looking to purchase a car are looking for more than just a conveyance. They will be looking to buy a car that is an economical means to regularly transport themselves and their items on a reliable, regular basis.
+
+# Metric to test
+
+To narrow down our test, we should evaluate MechaCar's carrying capacity, in cubic inches, in comparison to various competitors' vehicles.
+
+# Null and Alternate Hypothesis
+
+H0: MechaCar prototypes' average carrying capacity is similar to competitor's vehicles in the same vehicle class Ha: MechaCar prototypes' average carrying capacity is statistically above or below that of competitor vehicles.
+
+# Statistical Test Used
+
+The best statistical test for this would be two-sample t-tests.
+
+
